@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<!-- Clearway — Mobile Emission Check HTML Template · v1.0.0 · page: index.html -->
+<html lang="en" dir="ltr" data-bs-theme="light" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Doorstep Vehicle Emission Test & PUC Certificate | Clearway</title>
+  <meta name="description" content="Book a doorstep vehicle emission test. A certified technician tests your bike, car or van at home or work and sends a valid certificate the very same day.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.example.com/pages/index.html">
+  <meta name="theme-color" content="#0E4D45">
+  <!-- Open Graph / social (TODO: replace domain + image) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Clearway">
+  <meta property="og:title" content="Doorstep Vehicle Emission Test & PUC Certificate | Clearway">
+  <meta property="og:description" content="Book a doorstep vehicle emission test. A certified technician tests your bike, car or van at home or work and sends a valid certificate the very same day.">
+  <meta property="og:url" content="https://www.example.com/pages/index.html">
+  <meta property="og:image" content="https://www.example.com/assets/images/4%20wheeler%20test.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+
+  <!-- Fonts: Sora (display) + Nunito Sans (body). To self-host, see assets/fonts/README.md -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&amp;family=Sora:wght@600;700;800&amp;display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 (main.js swaps this for bootstrap.rtl.min.css in RTL mode) + Bootstrap Icons -->
+  <link id="bootstrap-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <script>
+    /* Apply saved theme + direction before first paint (prevents a flash). */
+    (function () {
+      var d = document.documentElement, t = null, r = null;
+      try { t = localStorage.getItem("cw-theme"); r = localStorage.getItem("cw-dir"); } catch (e) {}
+      d.setAttribute("data-bs-theme", t || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"));
+      if (r === "rtl") { d.setAttribute("dir", "rtl"); document.getElementById("bootstrap-css").href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"; }
+    })();
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Template styles -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutomotiveBusiness",
+  "@id": "https://www.example.com/#business",
+  "name": "Clearway Mobile Emission Check",
+  "url": "https://www.example.com/",
+  "logo": "https://www.example.com/assets/images/logo-mark.svg",
+  "image": "https://www.example.com/assets/images/4%20wheeler%20test.jpg",
+  "telephone": "+911800001234",
+  "email": "hello@clearway.example",
+  "priceRange": "₹149–₹499",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "TODO: 12 Example Road",
+    "addressLocality": "Bengaluru",
+    "postalCode": "560001",
+    "addressCountry": "IN"
+  },
+  "areaServed": [
+    "Bengaluru",
+    "Mumbai",
+    "Chennai",
+    "New Delhi",
+    "Pune",
+    "Hyderabad",
+    "Gurugram",
+    "Noida"
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "07:00",
+      "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday",
+      "opens": "08:00",
+      "closes": "14:00"
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "3120"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is the certificate legally valid?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Every test is done with government-approved, calibrated equipment by a licensed operator, and the result is uploaded to the official vehicle database — exactly as at a fixed test centre. You can verify any certificate by scanning its QR code. (TODO: add your licence / authorisation number here.)"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does the test take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "About 15 minutes for a two-wheeler, 20 minutes for a car and up to 30 minutes for a commercial vehicle. Your certificate usually reaches your phone within an hour of the test."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I keep ready?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Just the vehicle and its registration certificate (RC) number. Park where the technician can reach the exhaust pipe, and make sure the engine can idle for a few minutes. That's it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if my vehicle fails?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You only pay the visit fee, not the certificate fee. We explain which reading was high in plain words, suggest common fixes (often a service or air-filter change) and give you a free re-test within 7 days."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long is the certificate valid?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on your vehicle and local rules — typically 6 to 12 months. The exact expiry date is printed on your certificate, and we remind you 30, 7 and 1 day before it runs out."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you come to offices and apartment parking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We test wherever the vehicle is parked safely — home, office, society basement or open parking. Just add a landmark and parking slot when you book."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- ============ TOP BAR (optional promo — delete if not needed) ============ -->
+<div class="cw-topbar">
+  <div class="container">
+    <i class="bi bi-bell-fill" aria-hidden="true"></i>
+    <span>Certificate expiring soon? Renew at your doorstep from ₹129.</span>
+    <a href="service-details-renewal.html">See renewal</a>
+  </div>
+</div>
+
+<!-- ============ HEADER / NAVIGATION ============ -->
+<header class="cw-header">
+  <nav class="navbar navbar-expand-cw" aria-label="Main navigation">
+    <div class="container">
+      <a class="cw-logo" href="index.html" aria-label="Clearway home">
+        <img src="../assets/images/logo-mark.svg" alt="" width="40" height="40">
+        <span class="cw-logo-text">Clearway<small>Mobile Emission Check</small></span>
+      </a>
+
+      <div class="cw-header-tools">
+        <button type="button" class="btn btn-ghost btn-icon theme-toggle" aria-label="Switch to dark mode" aria-pressed="false">
+          <i class="bi bi-moon-stars icon-light" aria-hidden="true"></i><i class="bi bi-sun icon-dark" aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn btn-ghost btn-icon dir-toggle" aria-label="Switch to right-to-left layout" aria-pressed="false">
+          <span class="dir-label">RTL</span>
+        </button>
+        <a class="btn btn-cw d-none d-sm-inline-flex ms-1" href="dashboard-book.html"><i class="bi bi-calendar2-check" aria-hidden="true"></i> Book Test</a>
+        <button class="navbar-toggler ms-1" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Open menu">
+          <span class="cw-toggler-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav cw-nav mx-auto">
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active" href="index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a><ul class="dropdown-menu shadow border-0 p-2" style="border-radius:14px"><li><a class="dropdown-item py-2 active" href="index.html" aria-current="page">Home — Classic</a></li><li><a class="dropdown-item py-2" href="index-2.html">Home — Photo</a></li></ul></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="coverage.html">Coverage Area</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html"><i class="bi bi-person-circle me-2" aria-hidden="true"></i>Login</a></li>
+        </ul>
+        <a class="btn btn-cw d-sm-none w-100 mt-2" href="dashboard-book.html"><i class="bi bi-calendar2-check" aria-hidden="true"></i> Book a Doorstep Test</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- =====================================================================
+     2. HERO — what, where, what you get, what to do next
+     ===================================================================== -->
+<section class="cw-hero cw-hero--bg" aria-labelledby="hero-title">
+  <div class="cw-hero-bg" aria-hidden="true"><img src="../assets/images/hero-banner.jpg" alt="" width="1920" height="1601" fetchpriority="high" decoding="async"></div>
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6 col-xl-7">
+        <span class="cw-hero-tag"><span class="dot"><i class="bi bi-wind" aria-hidden="true"></i></span>Clean Air, Delivered.</span>
+        <h1 id="hero-title">Get your vehicle's emission test done <span class="hl">at your doorstep.</span></h1>
+        <p class="cw-hero-sub">A certified technician comes to your home, office or parking spot, tests your vehicle in minutes and sends your pollution certificate the same day.</p>
+        <div class="d-flex flex-wrap gap-2">
+          <a class="btn btn-cw btn-lg" href="dashboard-book.html"><i class="bi bi-calendar2-check" aria-hidden="true"></i> Book a Doorstep Test</a>
+          <a class="btn btn-outline-cw btn-lg" href="#how-it-works"><i class="bi bi-play-circle" aria-hidden="true"></i> See how it works</a>
+        </div>
+        <div class="cw-price-line" aria-label="Price and time">
+          <span><i class="bi bi-tag-fill" aria-hidden="true"></i>From ₹149, visit included</span>
+          <span><i class="bi bi-clock-fill" aria-hidden="true"></i>15–30 minute test</span>
+        </div>
+        <ul class="cw-trust-strip p-0" aria-label="Why people trust us">
+          <li><i class="bi bi-patch-check-fill" aria-hidden="true"></i>Certified Technicians</li>
+          <li><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>Same-Day Certificate</li>
+          <li><i class="bi bi-stopwatch-fill" aria-hidden="true"></i>30-Minute Visit</li>
+        </ul>
+        <!-- Pollution meter (signature element) -->
+        <div class="cw-gauge-card mt-4" role="img" aria-label="Sample reading: carbon monoxide 0.21 percent, in the green zone. Result: pass.">
+          <svg class="cw-gauge" viewBox="0 0 200 118" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+  <path d="M20 100 A80 80 0 0 1 60 30.7" stroke="#8DDB5A" stroke-width="18" fill="none" stroke-linecap="round"/>
+  <path d="M64 28.6 A80 80 0 0 1 136 28.6" stroke="#F2A93B" stroke-width="18" fill="none"/>
+  <path d="M140 30.7 A80 80 0 0 1 180 100" stroke="#E05A4E" stroke-width="18" fill="none" stroke-linecap="round"/>
+  <text x="22" y="117" font-size="11" font-weight="800" fill="currentColor" opacity=".6" font-family="inherit">LOW</text>
+  <text x="152" y="117" font-size="11" font-weight="800" fill="currentColor" opacity=".6" font-family="inherit">HIGH</text>
+  <g class="needle"><path d="M100 100 L96 98 L100 34 L104 98 Z" fill="currentColor"/></g>
+  <circle cx="100" cy="100" r="9" fill="currentColor"/><circle cx="100" cy="100" r="3.5" fill="#8DDB5A"/>
+</svg>
+          <div class="cw-gauge-readout">
+            <div class="label">Live reading</div>
+            <div class="value">CO 0.21% <small>/ 0.30% limit</small></div>
+            <span class="cw-badge badge-pass mt-1">PASS · green zone</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-xl-5">
+        <!-- Quick booking card — TODO: connect to your booking calendar/API in main.js §06 -->
+        <div class="cw-booking-card">
+          <div class="cw-booking-art">
+            <img src="../assets/images/banner1.jpg"  sizes="(min-width: 1024px) 40vw, 100vw" alt="Certified technician in uniform inspecting a customer's car" width="1200" height="560" fetchpriority="high" data-photo="hero">
+            <span class="eta"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>Slots open today</span>
+          </div>
+          <form class="cw-booking-body" id="quickBooking" novalidate aria-labelledby="qb-title">
+            <h2 id="qb-title">Check availability</h2>
+            <p class="cw-muted small mb-3">Three quick answers. No sign-up needed.</p>
+            <fieldset class="mb-3" data-radio-group>
+              <legend class="form-label">1. Vehicle type</legend>
+              <div class="cw-vehicle-pick">
+              <div><input type="radio" name="vehicle" id="qv-bike" value="bike" required>
+              <label for="qv-bike"><i class="bi bi-bicycle" aria-hidden="true"></i>Bike / Scooter<small>from ₹149</small></label></div>
+              <div><input type="radio" name="vehicle" id="qv-car" value="car" checked required>
+              <label for="qv-car"><i class="bi bi-car-front-fill" aria-hidden="true"></i>Car<small>from ₹299</small></label></div>
+              <div><input type="radio" name="vehicle" id="qv-commercial" value="commercial" required>
+              <label for="qv-commercial"><i class="bi bi-truck" aria-hidden="true"></i>Commercial<small>from ₹499</small></label></div>
+              </div>
+              <div class="invalid-feedback"></div>
+            </fieldset>
+            <div class="row g-3">
+              <div class="col-sm-6 cw-field">
+                <label class="form-label" for="qbPincode">2. Pincode</label>
+                <div class="input-icon"><i class="bi bi-geo-alt" aria-hidden="true"></i>
+                  <input class="form-control" id="qbPincode" name="pincode" inputmode="numeric" autocomplete="postal-code" placeholder="e.g. 560001" required pattern="[1-9][0-9]{5}" maxlength="6" data-msg-required="Add your pincode so we can find a nearby technician." data-msg-pattern="Pincodes have 6 digits, like 560001.">
+                </div>
+                <div class="invalid-feedback"></div>
+              </div>
+              <div class="col-sm-6 cw-field">
+                <label class="form-label" for="qbDate">3. Preferred date</label>
+                <input class="form-control" type="date" id="qbDate" name="date" required data-msg-required="Pick a day that suits you." data-msg-min="That date has passed — please pick today or later." data-msg-max="We take bookings up to 30 days ahead.">
+                <div class="invalid-feedback"></div>
+              </div>
+            </div>
+            <button class="btn btn-cw btn-lg w-100 mt-3" type="submit"><i class="bi bi-search" aria-hidden="true"></i> Check Availability</button>
+            <div id="qbResult" class="cw-availability" role="status" aria-live="polite"></div>
+            <p class="small cw-muted mt-3 mb-0"><i class="bi bi-shield-lock me-1" aria-hidden="true"></i>Pay after booking. Free cancellation up to 2 hours before.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="route-divider" aria-hidden="true">
+  <span class="route-node"><i class="bi bi-truck"></i></span><span class="route-path"></span>
+  <span class="route-node"><i class="bi bi-house-door"></i></span><span class="route-path"></span>
+  <span class="route-node is-pass"><i class="bi bi-patch-check-fill"></i></span>
+</div>
+
+<!-- =====================================================================
+     3. HOW IT WORKS — the clearest section on the page
+     ===================================================================== -->
+<section class="cw-section pt-4" id="how-it-works" aria-labelledby="how-title">
+  <div class="container">
+    <div class="cw-section-head text-center">
+      <span class="cw-eyebrow">How it works</span>
+      <h2 id="how-title">Four steps. You don't leave home.</h2>
+      <p class="cw-lead">From booking to certificate in about an hour.</p>
+    </div>
+    <ol class="row cw-steps list-unstyled g-4 mb-0">
+      <li class="col-sm-6 col-lg-3 cw-step reveal">
+        <div class="cw-step-icon"><i class="bi bi-phone" aria-hidden="true"></i><span class="n" aria-hidden="true">1</span></div>
+        <span class="cw-step-num">Step 1</span>
+        <h3>Book Online</h3>
+        <p>Choose your vehicle, address and a time that suits you.</p>
+        <span class="cw-step-time">1 minute</span>
+      </li>
+      <li class="col-sm-6 col-lg-3 cw-step reveal">
+        <div class="cw-step-icon"><i class="bi bi-truck" aria-hidden="true"></i><span class="n" aria-hidden="true">2</span></div>
+        <span class="cw-step-num">Step 2</span>
+        <h3>Technician Arrives</h3>
+        <p>A certified technician reaches your doorstep in our test van.</p>
+        <span class="cw-step-time">On time, tracked live</span>
+      </li>
+      <li class="col-sm-6 col-lg-3 cw-step reveal">
+        <div class="cw-step-icon"><i class="bi bi-speedometer2" aria-hidden="true"></i><span class="n" aria-hidden="true">3</span></div>
+        <span class="cw-step-num">Step 3</span>
+        <h3>On-Spot Emission Test</h3>
+        <p>We place a probe in the exhaust and read the emissions.</p>
+        <span class="cw-step-time">15–30 minutes</span>
+      </li>
+      <li class="col-sm-6 col-lg-3 cw-step reveal">
+        <div class="cw-step-icon"><i class="bi bi-patch-check-fill" aria-hidden="true"></i><span class="n" aria-hidden="true">4</span></div>
+        <span class="cw-step-num">Step 4</span>
+        <h3>Get Certificate Digitally</h3>
+        <p>Your valid certificate arrives on your phone and email.</p>
+        <span class="cw-step-time">Same day</span>
+      </li>
+    </ol>
+    <div class="text-center mt-4"><a class="btn btn-cw btn-lg" href="dashboard-book.html"><i class="bi bi-calendar2-check" aria-hidden="true"></i> Book a Doorstep Test</a></div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     4. SERVICES PREVIEW
+     ===================================================================== -->
+<section class="cw-section cw-section-alt" aria-labelledby="services-title">
+  <div class="container">
+    <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 cw-section-head mw-100">
+      <div style="max-width:620px">
+        <span class="cw-eyebrow">Services</span>
+        <h2 id="services-title">A test for every vehicle you own</h2>
+        <p class="cw-lead mb-0">Prices include the doorstep visit. What you see is what you pay.</p>
+      </div>
+      <a class="btn btn-outline-cw" href="services.html">All services <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+    </div>
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-3 reveal">
+        <article class="cw-card cw-card-hover cw-service-card">
+          <span class="cw-icon"><i class="bi bi-bicycle" aria-hidden="true"></i></span>
+          <h3>Two-Wheeler Test</h3>
+          <p>Bikes and scooters, petrol or CNG. Quick idle test at your gate.</p>
+          <div class="cw-service-meta">
+            <div class="cw-price-from"><small>Starting at</small><strong>₹149</strong></div>
+            <span class="cw-time-tag"><i class="bi bi-clock" aria-hidden="true"></i>15 min</span>
+          </div>
+          <a class="btn-link-cw" href="dashboard-book.html?vehicle=bike">Book bike<span class="visually-hidden"> test</span> <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+        </article>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal">
+        <article class="cw-card cw-card-hover cw-service-card">
+          <span class="cw-icon"><i class="bi bi-car-front-fill" aria-hidden="true"></i></span>
+          <h3>Car / Four-Wheeler Test</h3>
+          <p>Petrol, diesel and CNG cars, hatchbacks to SUVs.</p>
+          <div class="cw-service-meta">
+            <div class="cw-price-from"><small>Starting at</small><strong>₹299</strong></div>
+            <span class="cw-time-tag"><i class="bi bi-clock" aria-hidden="true"></i>20 min</span>
+          </div>
+          <a class="btn-link-cw" href="dashboard-book.html?vehicle=car">Book car<span class="visually-hidden"> test</span> <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+        </article>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal">
+        <article class="cw-card cw-card-hover cw-service-card">
+          <span class="cw-icon"><i class="bi bi-truck" aria-hidden="true"></i></span>
+          <h3>Commercial Vehicle Test</h3>
+          <p>Autos, taxis, vans and light trucks — fleet slots available.</p>
+          <div class="cw-service-meta">
+            <div class="cw-price-from"><small>Starting at</small><strong>₹499</strong></div>
+            <span class="cw-time-tag"><i class="bi bi-clock" aria-hidden="true"></i>30 min</span>
+          </div>
+          <a class="btn-link-cw" href="dashboard-book.html?vehicle=commercial">Book commercial<span class="visually-hidden"> test</span> <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+        </article>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal">
+        <article class="cw-card cw-card-hover cw-service-card">
+          <span class="cw-icon is-amber"><i class="bi bi-arrow-repeat" aria-hidden="true"></i></span>
+          <h3>Certificate Renewal</h3>
+          <p>Re-test before your certificate expires. We'll remind you first.</p>
+          <div class="cw-service-meta">
+            <div class="cw-price-from"><small>Starting at</small><strong>₹129</strong></div>
+            <span class="cw-time-tag"><i class="bi bi-clock" aria-hidden="true"></i>15–30 min</span>
+          </div>
+          <a class="btn-link-cw" href="service-details-renewal.html">Book renewal<span class="visually-hidden"> test</span> <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     5. WHY CHOOSE US
+     ===================================================================== -->
+<section class="cw-section" aria-labelledby="why-title">
+  <div class="container">
+    <div class="row g-5 align-items-stretch">
+      <div class="col-lg-5">
+        <div class="cw-why-panel">
+          <span class="cw-eyebrow">Why choose us</span>
+          <h2 id="why-title">The test centre now comes to you</h2>
+          <p class="mt-3">Same approved test, same valid certificate — without the drive, the queue or the wasted morning.</p>
+          <ul class="cw-compare">
+            <li><i class="bi bi-x-circle" aria-hidden="true"></i><span>Old way: drive out, wait 20–40 minutes in line, collect a paper slip.</span></li>
+            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>Clearway: we arrive in your slot, test in minutes, certificate on your phone.</span></li>
+          </ul>
+          <a class="btn btn-cw-accent mt-4" href="dashboard-book.html"><i class="bi bi-calendar2-check" aria-hidden="true"></i> Book a Doorstep Test</a>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="row g-4 h-100 align-content-center">
+          <div class="col-sm-6">
+            <div class="cw-benefit">
+              <span class="cw-icon"><i class="bi bi-people" aria-hidden="true"></i></span>
+              <div><h3>No queues</h3><p>Skip the petrol-pump line. We come to wherever the vehicle is parked.</p></div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="cw-benefit">
+              <span class="cw-icon is-accent"><i class="bi bi-shield-check" aria-hidden="true"></i></span>
+              <div><h3>Certified equipment</h3><p>Government-approved analyzers, calibrated every month and logged.</p></div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="cw-benefit">
+              <span class="cw-icon"><i class="bi bi-phone-vibrate" aria-hidden="true"></i></span>
+              <div><h3>Digital certificate</h3><p>Get it on WhatsApp and email. Verify anytime with the QR code.</p></div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="cw-benefit">
+              <span class="cw-icon is-amber"><i class="bi bi-bell" aria-hidden="true"></i></span>
+              <div><h3>Renewal reminders</h3><p>We nudge you 30, 7 and 1 day before expiry. No more fines.</p></div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="cw-benefit">
+              <span class="cw-icon"><i class="bi bi-tag" aria-hidden="true"></i></span>
+              <div><h3>Transparent pricing</h3><p>One price shown before you book. Doorstep visit included.</p></div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="cw-benefit">
+              <span class="cw-icon is-accent"><i class="bi bi-arrow-counterclockwise" aria-hidden="true"></i></span>
+              <div><h3>Free re-test</h3><p>Didn't pass? Re-test free within 7 days after a quick fix.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     6. COVERAGE TEASER
+     ===================================================================== -->
+<section class="cw-section cw-section-alt" aria-labelledby="coverage-title">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6 order-lg-2">
+        <!-- Map placeholder — TODO: swap for a Google Maps embed (see documentation) -->
+        <div class="cw-map-placeholder">
+          <img src="../assets/images/coverage area.jpg" sizes="(min-width: 1024px) 50vw, 100vw" alt="City skyline in one of the cities where Clearway vans operate" width="1000" height="700" loading="lazy" decoding="async" data-photo="home-coverage">
+          <span class="cw-map-note"><i class="bi bi-geo-alt-fill me-1" aria-hidden="true"></i>Live in 8 cities · 120+ areas</span>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <span class="cw-eyebrow">Coverage area</span>
+        <h2 id="coverage-title">We're probably already in your area</h2>
+        <p class="cw-lead">Live in 8 cities and 120+ neighbourhoods, adding more every month.</p>
+        <form class="cw-pincode-box mt-4" data-pincode-check novalidate aria-labelledby="pin-title">
+          <h3 class="h6 mb-2" id="pin-title">Check your pincode</h3>
+          <div class="cw-field">
+            <label class="visually-hidden" for="pinHome">Pincode</label>
+            <div class="d-flex gap-2">
+              <div class="input-icon flex-grow-1"><i class="bi bi-geo-alt" aria-hidden="true"></i>
+                <input class="form-control" id="pinHome" inputmode="numeric" maxlength="6" placeholder="Enter 6-digit pincode" required pattern="[1-9][0-9]{5}" data-msg-required="Type your pincode to check." data-msg-pattern="Pincodes have 6 digits, like 400001.">
+              </div>
+              <button class="btn btn-cw" type="submit">Check</button>
+            </div>
+            <div class="invalid-feedback"></div>
+          </div>
+          <div class="cw-availability" role="status" aria-live="polite"></div>
+        </form>
+        <ul class="cw-chips list-unstyled mt-4" aria-label="Cities we serve"><li><a class="cw-chip" href="coverage.html?q=bengaluru"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>Bengaluru</a></li><li><a class="cw-chip" href="coverage.html?q=mumbai"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>Mumbai</a></li><li><a class="cw-chip" href="coverage.html?q=chennai"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>Chennai</a></li><li><a class="cw-chip" href="coverage.html?q=new+delhi"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>New Delhi</a></li><li><a class="cw-chip" href="coverage.html?q=pune"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>Pune</a></li><li><a class="cw-chip" href="coverage.html?q=hyderabad"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>Hyderabad</a></li><li><a class="cw-chip" href="coverage.html?q=gurugram"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>Gurugram</a></li><li><a class="cw-chip" href="coverage.html?q=noida"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>Noida</a></li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     7. CERTIFICATE & RENEWAL EXPLAINER
+     ===================================================================== -->
+<section class="cw-section" aria-labelledby="cert-title">
+  <div class="container">
+    <div class="cw-section-head text-center">
+      <span class="cw-eyebrow">Your certificate</span>
+      <h2 id="cert-title">What you get, explained</h2>
+      <p class="cw-lead">A PUC (Pollution Under Control) certificate is the official proof your vehicle's emissions are within legal limits.</p>
+    </div>
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-7">
+        <div class="cw-cert" role="img" aria-label="Sample emission certificate for vehicle KA 01 AB 1234, result pass, valid till 11 April 2027, with a QR code for verification">
+          <div class="cw-cert-head">
+            <div class="cw-cert-title"><small>Emission test certificate</small>Pollution Under Control (PUC)<div class="cw-muted small fw-semibold mt-1">Cert. No. CW-26-0481193</div></div>
+            <div class="cw-stamp"><div><span class="big">✔ PASS</span>WITHIN<br>LIMITS</div></div>
+          </div>
+          <div class="cw-cert-grid">
+            <div class="cw-cert-field"><small><span class="marker" aria-hidden="true">1</span>Vehicle number</small><strong><span class="cw-cert-plate">KA 01 AB 1234</span></strong></div>
+            <div class="cw-cert-field"><small>Vehicle · fuel</small><strong>Car · Petrol (BS-VI)</strong></div>
+            <div class="cw-cert-field"><small>Tested on</small><strong>12 Oct 2026, 10:42 AM</strong></div>
+            <div class="cw-cert-field"><small><span class="marker" aria-hidden="true">2</span>Valid till</small><strong><span class="cw-valid-ribbon"><i class="bi bi-calendar-check" aria-hidden="true"></i>11 Apr 2027</span></strong></div>
+          </div>
+          <div class="cw-cert-readings">
+            <div>CO (carbon monoxide)<strong>0.21% <span class="cw-muted fw-semibold small">/ 0.30</span></strong></div>
+            <div>HC (unburnt fuel)<strong>96 ppm <span class="cw-muted fw-semibold small">/ 200</span></strong></div>
+            <div>Lambda (air–fuel)<strong>1.01 <span class="cw-muted fw-semibold small">ok</span></strong></div>
+          </div>
+          <div class="cw-cert-foot">
+            <div class="d-flex align-items-center gap-3">
+              <div class="cw-qr"><svg viewBox="0 0 84 84" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="QR code to verify certificate CW-26-0481193"><rect width="84" height="84" fill="#fff"/><g fill="#1F2426"><rect x="32" y="0" width="4" height="4"/><rect x="36" y="0" width="4" height="4"/><rect x="48" y="0" width="4" height="4"/><rect x="32" y="4" width="4" height="4"/><rect x="44" y="4" width="4" height="4"/><rect x="32" y="8" width="4" height="4"/><rect x="44" y="12" width="4" height="4"/><rect x="40" y="16" width="4" height="4"/><rect x="48" y="16" width="4" height="4"/><rect x="32" y="20" width="4" height="4"/><rect x="48" y="20" width="4" height="4"/><rect x="32" y="24" width="4" height="4"/><rect x="40" y="24" width="4" height="4"/><rect x="44" y="24" width="4" height="4"/><rect x="36" y="28" width="4" height="4"/><rect x="40" y="28" width="4" height="4"/><rect x="0" y="32" width="4" height="4"/><rect x="8" y="32" width="4" height="4"/><rect x="40" y="32" width="4" height="4"/><rect x="56" y="32" width="4" height="4"/><rect x="64" y="32" width="4" height="4"/><rect x="68" y="32" width="4" height="4"/><rect x="0" y="36" width="4" height="4"/><rect x="4" y="36" width="4" height="4"/><rect x="12" y="36" width="4" height="4"/><rect x="16" y="36" width="4" height="4"/><rect x="28" y="36" width="4" height="4"/><rect x="32" y="36" width="4" height="4"/><rect x="44" y="36" width="4" height="4"/><rect x="52" y="36" width="4" height="4"/><rect x="0" y="40" width="4" height="4"/><rect x="16" y="40" width="4" height="4"/><rect x="24" y="40" width="4" height="4"/><rect x="28" y="40" width="4" height="4"/><rect x="44" y="40" width="4" height="4"/><rect x="48" y="40" width="4" height="4"/><rect x="56" y="40" width="4" height="4"/><rect x="60" y="40" width="4" height="4"/><rect x="72" y="40" width="4" height="4"/><rect x="76" y="40" width="4" height="4"/><rect x="4" y="44" width="4" height="4"/><rect x="12" y="44" width="4" height="4"/><rect x="44" y="44" width="4" height="4"/><rect x="60" y="44" width="4" height="4"/><rect x="68" y="44" width="4" height="4"/><rect x="72" y="44" width="4" height="4"/><rect x="4" y="48" width="4" height="4"/><rect x="8" y="48" width="4" height="4"/><rect x="16" y="48" width="4" height="4"/><rect x="20" y="48" width="4" height="4"/><rect x="32" y="48" width="4" height="4"/><rect x="36" y="48" width="4" height="4"/><rect x="48" y="48" width="4" height="4"/><rect x="56" y="48" width="4" height="4"/><rect x="36" y="52" width="4" height="4"/><rect x="52" y="52" width="4" height="4"/><rect x="60" y="52" width="4" height="4"/><rect x="64" y="52" width="4" height="4"/><rect x="80" y="52" width="4" height="4"/><rect x="32" y="56" width="4" height="4"/><rect x="40" y="56" width="4" height="4"/><rect x="44" y="56" width="4" height="4"/><rect x="56" y="56" width="4" height="4"/><rect x="60" y="56" width="4" height="4"/><rect x="72" y="56" width="4" height="4"/><rect x="80" y="56" width="4" height="4"/><rect x="60" y="60" width="4" height="4"/><rect x="76" y="60" width="4" height="4"/><rect x="32" y="64" width="4" height="4"/><rect x="36" y="64" width="4" height="4"/><rect x="52" y="64" width="4" height="4"/><rect x="56" y="64" width="4" height="4"/><rect x="64" y="64" width="4" height="4"/><rect x="68" y="64" width="4" height="4"/><rect x="80" y="64" width="4" height="4"/><rect x="32" y="68" width="4" height="4"/><rect x="44" y="68" width="4" height="4"/><rect x="52" y="68" width="4" height="4"/><rect x="32" y="72" width="4" height="4"/><rect x="48" y="72" width="4" height="4"/><rect x="56" y="72" width="4" height="4"/><rect x="60" y="72" width="4" height="4"/><rect x="76" y="72" width="4" height="4"/><rect x="80" y="72" width="4" height="4"/><rect x="36" y="76" width="4" height="4"/><rect x="40" y="76" width="4" height="4"/><rect x="52" y="76" width="4" height="4"/><rect x="56" y="76" width="4" height="4"/><rect x="68" y="76" width="4" height="4"/><rect x="76" y="76" width="4" height="4"/><rect x="56" y="80" width="4" height="4"/><rect x="72" y="80" width="4" height="4"/><rect x="80" y="80" width="4" height="4"/></g><rect x="0" y="0" width="28" height="28" fill="#1F2426"/><rect x="4" y="4" width="20" height="20" fill="#fff"/><rect x="8" y="8" width="12" height="12" fill="#1F2426"/><rect x="56" y="0" width="28" height="28" fill="#1F2426"/><rect x="60" y="4" width="20" height="20" fill="#fff"/><rect x="64" y="8" width="12" height="12" fill="#1F2426"/><rect x="0" y="56" width="28" height="28" fill="#1F2426"/><rect x="4" y="60" width="20" height="20" fill="#fff"/><rect x="8" y="64" width="12" height="12" fill="#1F2426"/></svg></div>
+              <div class="small"><strong class="d-block"><span class="marker" aria-hidden="true">3</span>Scan to verify</strong><span class="cw-muted">Opens the official record</span></div>
+            </div>
+            <div class="text-end small cw-muted">Tested by<br><strong class="text-body">R. Kumar · Tech ID 0217</strong></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="d-grid gap-4">
+          <div class="cw-callout"><span class="pin" aria-hidden="true">1</span><div><h3>Vehicle number</h3><p>Matches your RC, so police and insurers accept it instantly.</p></div></div>
+          <div class="cw-callout"><span class="pin" aria-hidden="true">2</span><div><h3>Valid till</h3><p>The date your certificate expires. Usually 6–12 months, based on your vehicle.</p></div></div>
+          <div class="cw-callout"><span class="pin" aria-hidden="true">3</span><div><h3>QR verification</h3><p>Anyone can scan it to confirm the certificate is genuine and current.</p></div></div>
+          <div class="cw-reminder-strip">
+            <span class="cw-icon"><i class="bi bi-bell-fill" aria-hidden="true"></i></span>
+            <div><strong>Never miss renewal — we remind you.</strong><div class="small">30, 7 and 1 day before expiry, by WhatsApp and email.</div></div>
+          </div>
+          <a class="btn btn-cw align-self-start" href="dashboard-book.html"><i class="bi bi-calendar2-check" aria-hidden="true"></i> Book a Doorstep Test</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     8. PRICING SNAPSHOT
+     ===================================================================== -->
+<section class="cw-section cw-section-alt" aria-labelledby="pricing-title">
+  <div class="container">
+    <div class="cw-section-head text-center">
+      <span class="cw-eyebrow">Pricing</span>
+      <h2 id="pricing-title">One clear price. Visit included.</h2>
+      <p class="cw-lead">No convenience fee, no surprises at your door.</p>
+    </div>
+    <div class="table-responsive">
+      <table class="cw-pricing-table">
+        <caption class="visually-hidden">Doorstep emission test prices by vehicle type</caption>
+        <thead>
+          <tr>
+            <th scope="col">What's included</th>
+            <th scope="col"><i class="bi bi-bicycle th-icon" aria-hidden="true"></i>Bike<span class="price">₹149</span><span class="per">15 min</span></th>
+            <th scope="col" class="is-featured"><i class="bi bi-car-front-fill th-icon" aria-hidden="true"></i>Car<span class="price text-white">₹299</span><span class="per text-white-50">20 min · most booked</span></th>
+            <th scope="col"><i class="bi bi-truck th-icon" aria-hidden="true"></i>Commercial<span class="price">₹499</span><span class="per">30 min</span></th>
+          </tr>
+        </thead>
+        <tbody><tr><th scope="row" class="fw-semibold">Doorstep visit (no extra fee)</th><td><i class="bi bi-check2" aria-hidden="true"></i><span class="visually-hidden">Included</span></td><td class="is-featured"><i class="bi bi-check2" aria-hidden="true"></i><span class="visually-hidden">Included</span></td><td><i class="bi bi-check2" aria-hidden="true"></i><span class="visually-hidden">Included</span></td></tr><tr><th scope="row" class="fw-semibold">Emission test with calibrated analyzer</th><td><i class="bi bi-check2" aria-hidden="true"></i><span class="visually-hidden">Included</span></td><td class="is-featured"><i class="bi bi-check2" aria-hidden="true"></i><span class="visually-hidden">Included</span></td><td><i class="bi bi-check2" aria-hidden="true"></i><span class="visually-hidden">Included</span></td></tr><tr><th scope="row" class="fw-semibold">Digital certificate (PDF + QR)</th><td><i class="bi bi-check2" aria-hidden="true"></i><span class="visually-hidden">Included</span></td><td class="is-featured"><i class="bi bi-check2" aria-hidden="true"></i><span class="visually-hidden">Included</span></td><td><i class="bi bi-check2" aria-hidden="true"></i><span class="visually-hidden">Included</span></td></tr><tr><th scope="row" class="fw-semibold">WhatsApp + email delivery</th><td><i class="bi bi-check2" aria-hidden="true"></i><span class="visually-hidden">Included</span></td><td class="is-featured"><i class="bi bi-check2" aria-hidden="true"></i><span class="visually-hidden">Included</span></td><td><i class="bi bi-check2" aria-hidden="true"></i><span class="visually-hidden">Included</span></td></tr><tr><th scope="row" class="fw-semibold">Renewal reminders</th><td><i class="bi bi-check2" aria-hidden="true"></i><span class="visually-hidden">Included</span></td><td class="is-featured"><i class="bi bi-check2" aria-hidden="true"></i><span class="visually-hidden">Included</span></td><td><i class="bi bi-check2" aria-hidden="true"></i><span class="visually-hidden">Included</span></td></tr><tr><th scope="row" class="fw-semibold">Free re-test within 7 days</th><td><i class="bi bi-check2" aria-hidden="true"></i><span class="visually-hidden">Included</span></td><td class="is-featured"><i class="bi bi-check2" aria-hidden="true"></i><span class="visually-hidden">Included</span></td><td><i class="bi bi-check2" aria-hidden="true"></i><span class="visually-hidden">Included</span></td></tr><tr><th scope="row" class="fw-semibold">Diesel smoke-opacity test</th><td><i class="bi bi-dash" aria-hidden="true"></i><span class="visually-hidden">Not included</span></td><td class="is-featured"><i class="bi bi-check2" aria-hidden="true"></i><span class="visually-hidden">Included</span></td><td><i class="bi bi-check2" aria-hidden="true"></i><span class="visually-hidden">Included</span></td></tr><tr><th scope="row" class="fw-semibold">Fleet booking & GST invoice</th><td><i class="bi bi-dash" aria-hidden="true"></i><span class="visually-hidden">Not included</span></td><td class="is-featured"><i class="bi bi-dash" aria-hidden="true"></i><span class="visually-hidden">Not included</span></td><td><i class="bi bi-check2" aria-hidden="true"></i><span class="visually-hidden">Included</span></td></tr></tbody>
+      </table>
+    </div>
+    <div class="d-flex flex-wrap gap-3 justify-content-center align-items-center mt-4">
+      <a class="btn btn-cw btn-lg" href="dashboard-book.html"><i class="bi bi-calendar2-check" aria-hidden="true"></i> Book a Doorstep Test</a>
+      <a class="btn-link-cw" href="pricing.html">Full pricing &amp; fleet rates <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     9. CUSTOMER DASHBOARD PREVIEW (laptop + phone mockup, pure HTML/CSS)
+     ===================================================================== -->
+<section class="cw-section" aria-labelledby="dash-title">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-5">
+        <span class="cw-eyebrow">Your dashboard</span>
+        <h2 id="dash-title">Everything about your vehicles, in one place</h2>
+        <p class="cw-lead">Log in to see what's booked, what's valid and what's due.</p>
+        <ul class="cw-feature-list mt-4">
+          <li><span class="cw-icon is-sm"><i class="bi bi-calendar3" aria-hidden="true"></i></span><div><strong>Bookings</strong><span>Track your technician live, reschedule in one tap.</span></div></li>
+          <li><span class="cw-icon is-sm is-accent"><i class="bi bi-patch-check" aria-hidden="true"></i></span><div><strong>Certificate status</strong><span>Download, share or verify any certificate.</span></div></li>
+          <li><span class="cw-icon is-sm is-amber"><i class="bi bi-bell" aria-hidden="true"></i></span><div><strong>Reminders</strong><span>See countdowns for every vehicle you own.</span></div></li>
+          <li><span class="cw-icon is-sm"><i class="bi bi-receipt" aria-hidden="true"></i></span><div><strong>Payments</strong><span>Invoices and receipts, ready for claims or GST.</span></div></li>
+        </ul>
+        <a class="btn btn-cw mt-2" href="dashboard.html"><i class="bi bi-grid-1x2" aria-hidden="true"></i> Preview the dashboard</a>
+      </div>
+      <div class="col-lg-7">
+        <div class="cw-devices" role="img" aria-label="The customer dashboard shown on a laptop and a phone, listing an upcoming booking, a valid certificate, a renewal reminder and recent payments">
+          <div class="cw-laptop" aria-hidden="true">
+            <div class="cw-laptop-screen">
+              <div class="mini-ui">
+                <div class="mini-side"><span class="logo"></span><span class="on"></span><span></span><span></span><span></span><span></span><span></span></div>
+                <div class="mini-main">
+                  <div class="mini-card wide" style="background:var(--cw-primary);border:0"><em style="color:#CFE3DD">Upcoming test</em><b style="color:#fff">Tomorrow · 10:00–10:30 AM · Car KA 01 AB 1234</b></div>
+                  <div class="mini-card"><em>Valid</em><b>3</b></div>
+                  <div class="mini-card"><em>Due soon</em><b style="color:var(--cw-amber-ink)">1</b></div>
+                  <div class="mini-card"><em>Bookings</em><b>7</b></div>
+                  <div class="mini-card"><em>Spent</em><b>₹1,846</b></div>
+                  <div class="mini-card half"><em>Bookings</em>
+                    <div class="mini-row"><span>Car · 13 Oct</span><span class="mini-pill t">Scheduled</span></div>
+                    <div class="mini-row"><span>Scooter · 2 Oct</span><span class="mini-pill a">On the way</span></div>
+                    <div class="mini-row"><span>Van · 20 Sep</span><span class="mini-pill g">Completed</span></div>
+                  </div>
+                  <div class="mini-card half"><em>Certificates</em>
+                    <div class="mini-row"><span>KA 01 AB 1234</span><span class="mini-pill g">PASS</span></div>
+                    <div class="mini-row"><span>KA 05 MN 7781</span><span class="mini-pill a">12 days</span></div>
+                    <div class="mini-row"><span>KA 03 TR 4410</span><span class="mini-pill g">PASS</span></div>
+                  </div>
+                  <div class="mini-card half"><em>Reminder</em><b>Scooter due in 12 days</b><div class="mini-bar"><i style="width:84%"></i></div></div>
+                  <div class="mini-card half"><em>Payments</em><div class="mini-row"><span>INV-2041</span><span>₹299</span></div><div class="mini-row"><span>INV-1987</span><span>₹149</span></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cw-laptop-base" aria-hidden="true"></div>
+          <div class="cw-phone" aria-hidden="true">
+            <div class="cw-phone-screen">
+              <div class="mini-card mb-2" style="background:var(--cw-primary);border:0"><em style="color:#CFE3DD">Technician</em><b style="color:#fff">Arriving in 12 min</b></div>
+              <div class="mini-card mb-2 text-center"><em>Certificate</em><b>KA 01 AB 1234</b><span class="mini-pill g d-inline-block mt-1">✔ PASS</span><div class="cw-muted" style="font-size:.5rem;margin-top:3px">Valid till 11 Apr 2027</div></div>
+              <div class="mini-card mb-2" style="background:var(--cw-amber-soft)"><em>Reminder</em><b>Scooter · 12 days</b><div class="mini-bar"><i style="width:84%"></i></div></div>
+              <div class="mini-card"><em>Last payment</em><b>₹299 · Paid</b></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     10. TESTIMONIALS + STATS
+     ===================================================================== -->
+<section class="cw-section cw-section-alt" aria-labelledby="reviews-title">
+  <div class="container">
+    <div class="cw-section-head text-center">
+      <span class="cw-eyebrow">Reviews</span>
+      <h2 id="reviews-title">Loved by drivers who hate queues</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4 reveal">
+        <figure class="cw-card cw-quote m-0">
+          <div class="stars" aria-label="Rated 5 out of 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i></div>
+          <blockquote><p class="mb-0">“The technician tested my car in the office basement during lunch. Certificate was on WhatsApp before I got back to my desk.”</p></blockquote>
+          <figcaption>
+            <footer><img class="cw-avatar" src="../assets/images/review1.jpg" alt="Car bonnet and headlight, the vehicle Priya had tested at her office" width="44" height="44" loading="lazy" decoding="async"><div><strong>Priya R.</strong><span></span></div></footer>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-md-4 reveal">
+        <figure class="cw-card cw-quote m-0">
+          <div class="stars" aria-label="Rated 5 out of 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i></div>
+          <blockquote><p class="mb-0">“I run six delivery vans. They tested all of them in one morning at our depot, and I got one GST invoice.”</p></blockquote>
+          <figcaption>
+            <footer><img class="cw-avatar" src="../assets/images/review2.jpg" alt="Delivery van parked at a depot, like the ones Arjun runs" width="44" height="44" loading="lazy" decoding="async"><div><strong>Arjun K.</strong><span></span></div></footer>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-md-4 reveal">
+        <figure class="cw-card cw-quote m-0">
+          <div class="stars" aria-label="Rated 5 out of 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i></div>
+          <blockquote><p class="mb-0">“My scooter failed first time. They explained why in simple words, I got it serviced, and the re-test was free.”</p></blockquote>
+          <figcaption>
+            <footer><img class="cw-avatar" src="../assets/images/review3.jpg" alt="Motorcycle engine being checked, like Sneha's scooter test" width="44" height="44" loading="lazy" decoding="async"><div><strong>Sneha M.</strong><span></span></div></footer>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="cw-stats mt-5">
+      <div class="row g-4">
+          <div class="col-6 col-lg-3 cw-stat"><div class="num"><span data-count="48000">48,000</span><span class="unit">+</span></div><div class="lbl">Tests done at doorsteps</div></div>
+          <div class="col-6 col-lg-3 cw-stat"><div class="num"><span data-count="120">120</span><span class="unit">+</span></div><div class="lbl">Areas covered</div></div>
+          <div class="col-6 col-lg-3 cw-stat"><div class="num"><span data-count="4.8">4.8</span><span class="unit">/5</span></div><div class="lbl">Average rating</div></div>
+          <div class="col-6 col-lg-3 cw-stat"><div class="num"><span data-count="22">22</span><span class="unit"> min</span></div><div class="lbl">Average visit time</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     11. FAQ
+     ===================================================================== -->
+<section class="cw-section" aria-labelledby="faq-title">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <div class="cw-sticky">
+          <span class="cw-eyebrow">FAQ</span>
+          <h2 id="faq-title">Questions, answered simply</h2>
+          <p class="cw-lead">The things people ask us most, in plain words.</p>
+          <div class="cw-faq-help mt-4">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <span class="cw-icon is-accent"><i class="bi bi-headset" aria-hidden="true"></i></span>
+            <div><strong class="d-block font-display">Talk to a real person</strong><span class="small cw-muted"></span></div>
+          </div>
+          <div class="d-grid gap-2 mb-3" style="grid-template-columns:1fr 1fr">
+            <a class="btn btn-outline-cw" href="tel:+911800001234"><i class="bi bi-telephone" aria-hidden="true"></i> Call</a>
+            <a class="btn btn-outline-cw" href="https://wa.me/910000000000" target="_blank" rel="noopener"><i class="bi bi-whatsapp" aria-hidden="true"></i> WhatsApp<span class="visually-hidden"> (opens in new tab)</span></a>
+          </div>
+          <h3 class="cw-faq-help-title">Quick facts</h3>
+          <ul class="cw-faq-facts"><li><i class="bi bi-stopwatch" aria-hidden="true"></i><span>15–30 minute test at your doorstep</span></li><li><i class="bi bi-lightning-charge" aria-hidden="true"></i><span>Certificate on your phone the same day</span></li><li><i class="bi bi-arrow-counterclockwise" aria-hidden="true"></i><span>Free re-test within 7 days if you don't pass</span></li><li><span></span></li></ul>
+        </div>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="accordion cw-accordion" id="homeFaq">
+  <div class="accordion-item">
+    <h3 class="accordion-header" id="homeFaq-h0">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#homeFaq-c0" aria-expanded="true" aria-controls="homeFaq-c0">Is the certificate legally valid?</button>
+    </h3>
+    <div id="homeFaq-c0" class="accordion-collapse collapse show" aria-labelledby="homeFaq-h0" data-bs-parent="#homeFaq">
+      <div class="accordion-body">Yes. Every test is done with government-approved, calibrated equipment by a licensed operator, and the result is uploaded to the official vehicle database — exactly as at a fixed test centre. You can verify any certificate by scanning its QR code. <em>(TODO: add your licence / authorisation number here.)</em></div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h3 class="accordion-header" id="homeFaq-h1">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#homeFaq-c1" aria-expanded="false" aria-controls="homeFaq-c1">How long does the test take?</button>
+    </h3>
+    <div id="homeFaq-c1" class="accordion-collapse collapse" aria-labelledby="homeFaq-h1" data-bs-parent="#homeFaq">
+      <div class="accordion-body">About 15 minutes for a two-wheeler, 20 minutes for a car and up to 30 minutes for a commercial vehicle. Your certificate usually reaches your phone within an hour of the test.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h3 class="accordion-header" id="homeFaq-h2">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#homeFaq-c2" aria-expanded="false" aria-controls="homeFaq-c2">What should I keep ready?</button>
+    </h3>
+    <div id="homeFaq-c2" class="accordion-collapse collapse" aria-labelledby="homeFaq-h2" data-bs-parent="#homeFaq">
+      <div class="accordion-body">Just the vehicle and its registration certificate (RC) number. Park where the technician can reach the exhaust pipe, and make sure the engine can idle for a few minutes. That's it.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h3 class="accordion-header" id="homeFaq-h3">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#homeFaq-c3" aria-expanded="false" aria-controls="homeFaq-c3">What if my vehicle fails?</button>
+    </h3>
+    <div id="homeFaq-c3" class="accordion-collapse collapse" aria-labelledby="homeFaq-h3" data-bs-parent="#homeFaq">
+      <div class="accordion-body">You only pay the visit fee, not the certificate fee. We explain which reading was high in plain words, suggest common fixes (often a service or air-filter change) and give you a free re-test within 7 days.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h3 class="accordion-header" id="homeFaq-h4">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#homeFaq-c4" aria-expanded="false" aria-controls="homeFaq-c4">How long is the certificate valid?</button>
+    </h3>
+    <div id="homeFaq-c4" class="accordion-collapse collapse" aria-labelledby="homeFaq-h4" data-bs-parent="#homeFaq">
+      <div class="accordion-body">It depends on your vehicle and local rules — typically 6 to 12 months. The exact expiry date is printed on your certificate, and we remind you 30, 7 and 1 day before it runs out.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h3 class="accordion-header" id="homeFaq-h5">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#homeFaq-c5" aria-expanded="false" aria-controls="homeFaq-c5">Do you come to offices and apartment parking?</button>
+    </h3>
+    <div id="homeFaq-c5" class="accordion-collapse collapse" aria-labelledby="homeFaq-h5" data-bs-parent="#homeFaq">
+      <div class="accordion-body">Yes. We test wherever the vehicle is parked safely — home, office, society basement or open parking. Just add a landmark and parking slot when you book.</div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FINAL CTA BAND ===== -->
+<section class="cw-cta-band" aria-labelledby="cta-title">
+  <div class="container cw-cta-inner">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-8">
+        <h2 id="cta-title">Book Your Doorstep Test Today.</h2>
+        <p class="mb-0 fs-5">Pick a slot in under a minute. A certified technician comes to you, and your certificate lands on your phone the same day.</p>
+      </div>
+      <div class="col-lg-4 d-flex flex-wrap gap-2 justify-content-lg-end">
+        <a class="btn btn-cw-accent btn-lg" href="dashboard-book.html"><i class="bi bi-calendar2-check" aria-hidden="true"></i> Book a Doorstep Test</a>
+        <a class="btn btn-outline-light btn-lg" href="tel:+911800001234"><i class="bi bi-telephone" aria-hidden="true"></i> Call us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="cw-footer" aria-labelledby="footer-heading">
+  <h2 id="footer-heading" class="visually-hidden">Site footer</h2>
+  <div class="container py-5">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <a class="cw-logo mb-3" href="index.html" aria-label="Clearway home">
+          <img src="../assets/images/logo-mark.svg" alt="" width="40" height="40">
+          <span class="cw-logo-text">Clearway<small>Mobile Emission Check</small></span>
+        </a>
+        <p class="mt-3">Certified technicians test your vehicle's emissions at your home, office or parking spot, then send your certificate the same day.</p>
+        <!-- Newsletter — Mailchimp-ready.
+             TODO: paste your Mailchimp form action URL (Audience → Signup forms → Embedded) into action="" -->
+        <form class="cw-validate mt-4" action="https://YOUR_ACCOUNT.us1.list-manage.com/subscribe/post?u=YOUR_U&amp;id=YOUR_ID" method="post" data-success="You're subscribed. Expect one useful email a month — no spam." aria-labelledby="nl-title">
+          <h3 id="nl-title" class="h6 text-white mb-2">Renewal tips &amp; rule changes, monthly</h3>
+          <div class="cw-field">
+            <label for="nl-email" class="visually-hidden">Email address</label>
+            <div class="d-flex gap-2">
+              <input type="email" class="form-control" id="nl-email" name="EMAIL" placeholder="you@example.com" required autocomplete="email" data-msg-required="Add your email so we can send the tips.">
+              <button class="btn btn-cw-accent flex-shrink-0" type="submit">Subscribe</button>
+            </div>
+            <div class="invalid-feedback"></div>
+          </div>
+          <!-- Mailchimp bot-trap field: keep it -->
+          <div class="visually-hidden" aria-hidden="true"><input type="text" name="b_YOUR_U_YOUR_ID" tabindex="-1" value="" autocomplete="off"></div>
+          <div class="cw-form-status mt-2" role="status" tabindex="-1"></div>
+        </form>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="index.html">Home — Classic</a></li>
+          <li><a href="index-2.html">Home — Photo</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="coverage.html">Coverage Area</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <h2>Services</h2>
+        <ul>
+          <li><a href="service-details-two-wheeler.html">Two-Wheeler Test</a></li>
+          <li><a href="service-details.html">Car Test</a></li>
+          <li><a href="service-details-commercial.html">Commercial Test</a></li>
+          <li><a href="service-details-renewal.html">Certificate Renewal</a></li>
+          <li><a href="login.html">Customer Login</a></li>
+          <li><a href="dashboard.html">My Dashboard</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 col-lg-4">
+        <h2>Talk to a human</h2>
+        <div class="cw-helpline"><i class="bi bi-telephone-fill" aria-hidden="true"></i><div><small>Helpline (toll-free)</small><a href="tel:+911800001234" class="ltr">1800-000-1234</a></div></div>
+        <div class="cw-helpline"><i class="bi bi-whatsapp" aria-hidden="true"></i><div><small>WhatsApp</small><a href="https://wa.me/910000000000" rel="noopener" target="_blank">Chat with us<span class="visually-hidden"> (opens WhatsApp in a new tab)</span></a></div></div>
+        <h3 class="h6 text-white mt-4 mb-2">Service hours</h3>
+        <div class="cw-hours"><span>Mon – Sat</span><span>7:00 AM – 8:00 PM</span><span>Sunday</span><span>8:00 AM – 2:00 PM</span></div>
+        <div class="cw-social mt-4" aria-label="Social media">
+          <a href="https://www.instagram.com/" rel="noopener" target="_blank" aria-label="Instagram (opens in new tab)"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/" rel="noopener" target="_blank" aria-label="Facebook (opens in new tab)"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+          <a href="https://x.com/" rel="noopener" target="_blank" aria-label="X (opens in new tab)"><i class="bi bi-twitter-x" aria-hidden="true"></i></a>
+          <a href="https://www.youtube.com/" rel="noopener" target="_blank" aria-label="YouTube (opens in new tab)"><i class="bi bi-youtube" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/" rel="noopener" target="_blank" aria-label="LinkedIn (opens in new tab)"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cw-footer-bottom">
+    <div class="container d-flex flex-wrap gap-3 justify-content-between align-items-center">
+      <p class="m-0">© <span data-year>2026</span> Clearway Mobile Emission Check. All rights reserved.</p>
+      <ul class="d-flex flex-wrap column-gap-3 flex-row">
+        <li><a href="legal.html#privacy">Privacy</a></li>
+        <li><a href="legal.html#terms">Terms</a></li>
+        <li><a href="legal.html#refunds">Refunds</a></li>
+        <li><a href="../sitemap.xml">Sitemap</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<a class="cw-whatsapp" href="https://wa.me/910000000000" rel="noopener" target="_blank" aria-label="Chat with us on WhatsApp (opens in new tab)"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>
